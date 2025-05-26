@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wczytywanie serwera...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="youtube-background-player"></div>
+  <div class="background-overlay"></div>
+
+  <div class="main-content">
+    <div class="center-loader">
+      <img src="assets/logo.png" alt="Logo serwera" class="server-logo" />
+
+      <div class="loading-animation-text">
+        <span class="loading-word-container">ŁADOWANIE...</span>
+      </div>
+
+      <div class="music-player-panel">
+        <div class="song-info-container">
+            <img id="song-thumbnail" src="#" alt="Okładka utworu" style="display:none;" />
+            <span id="current-song-title" class="song-title">Wczytywanie muzyki...</span>
+        </div>
+        <div class="player-controls">
+          <button id="prev-song-btn" class="skip-btn">
+            <i class="fas fa-fast-backward"></i>
+          </button>
+          <div class="volume-section">
+            <button id="volume-mute-btn" class="volume-mute-btn">🔇</button>
+            <input type="range" min="0" max="1" step="0.01" value="0.3" id="volume-slider" class="volume-slider" />
+          </div>
+          <button id="next-song-btn" class="skip-btn">
+            <i class="fas fa-fast-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="owners-panel">
+      <h3>Właściciele serwera</h3>
+      <div class="owner-cards-container">
+        <div class="owner-card">
+          <img src="assets/chujchuj.jpg" alt="esths_1" class="owner-avatar" />
+          <div class="owner-info">
+            <p class="owner-name">esths_1</p>
+            <p class="owner-role">Właściciel</p>
+          </div>
+        </div>
+        <div class="owner-card">
+          <img src="assets/gawnogawno.jpg" alt="Xenon392" class="owner-avatar" />
+          <div class="owner-info">
+            <p class="owner-name">Xenon392</p>
+            <p class="owner-role">Właściciel</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
